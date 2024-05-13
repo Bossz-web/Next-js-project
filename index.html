@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>TailwindCss</title>
+</head>
+<body>
+    
+
+<nav class="fixed bg-white md:bg-white lg:bg-white border-gray-200 dark:bg-gray-700 dark:border-gray-700 w-full">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+      <a href="#" class="flex items-center pl-4 pt-2 space-x-3 rtl:space-x-reverse">
+          <img src="/images/laboratory-logo.png" class="" alt="Flowbite Logo" />
+          <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span> -->
+      </a>
+      <button data-collapse-toggle="navbar-multi-level" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-700 -lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-700" aria-controls="navbar-multi-level" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
+        <ul class="text-md text-lg font-bold flex flex-col md:p-0 mr-4 border border-gray-100 -lg bg-gray-50 md:space-x-6 font-mono rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-700 dark:border-gray-700 p-2">
+    
+    <!-- Dropdown menu -->
+    <li>
+    <a href="" type="button" class="inline-flex  text-gray-700  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" id="menu-button" aria-expanded="true" aria-haspopup="true">
+      Home
+      <svg class="-mr-2 h-7 w-8 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+      </svg>
+    </a>
+  </li>
+
+    <!-- <li>
+        <a href="#" class="block py-2 px-3 text-gray-700  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">Home</a>
+      </li> -->
+
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-700  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent" aria-current="page">About Us</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-700  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-700  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Gallery</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-700  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-3 text-gray-700  hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Slider-image -->
+  <section class="">
+    <div class="" style="
+    background-image: url('/images/slider.jpg');
+    height: 110vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;">
+      <div class="text-center text-white pt-40 pb-24">
+        <h1 class="text-7xl font-light capitalize text-white">medical diagnostics <br> laboratory</h1>
+        <h4 class="py-4 uppercase tracking-widest font-mono">get slider revolution today</h4>
+        <button class="btn border tracking-widest px-9 py-2 rounded font-mono">BUY ON ENVATO</button>
+      </div>
+        </div>
+  </section>
+  <!-- Four-columns -->
+<section class="">
+  <!-- first-columns -->
+  <div class="grid grid-cols-1 md:grid-cols-4 " style="height: 100%;">
+    <div class="bg-blue-500  text-start">
+      <div class="pt-9 pl-4 text-white ">
+        <h1 class="font-bold text-2xl">Patients Area</h1>
+        <div class="py-6">
+        <hr class="border-white w-1/12 border-2">
+      </div>
+      <p class="text-light font-sans">
+        Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, <br> going forward.
+      </p>
+      <div class="py-8 ">
+        <button class="uppercase hover:bg-black font-thin  font-mono text-sm border-2 px-10 py-2">
+          more details
+        </button>
+      </div>
+      </div>
+    </div>
+    <div class="bg-blue-500  text-start">
+      <div class="pt-9 pl-4 text-white pb-8">
+        <h1 class="font-bold text-2xl">Patients Area</h1>
+        <div class="py-6">
+        <hr class="border-white w-1/12 border-2">
+      </div>
+      <p class="text-light font-sans">
+        Bring to the table win-win survival strategies to ensure proactive domination. At the  end of the day, <br> going forward.
+      </p>
+      <div class="py-8">
+        <button class="uppercase hover:bg-black font-thin  font-mono text-sm border-2 px-10 py-2">
+          more details
+        </button>
+      </div>
+      </div>
+    </div>
+
+    <div class=" text-black pt-9 pl-4 bg-gray-100 h-100 ">
+      <h1 class="font-bold  text-2xl">Opening Hours</h1>
+      <div class="py-4">
+      <hr class="border-blue-500 w-1/12 border-2">
+    </div>
+      <div class="text-blue-400 capitalize">
+        <span class="ml-5">Monday  – Friday</span>
+        <span class="mr-5 sm:text-right">9.00-18.00</span>
+      </div>
+      <div class="py-3">
+        <hr class="border w-45 m-auto mx-5">
+      </div>
+
+      <div class="text-blue-400 capitalize ">
+        <span class="ml-5">saturday </span>
+        <span class="mr-5 sm:text-right">9.00-14.00</span>
+      </div>
+      <div class="py-3">
+        <hr class="border w-45 m-auto mx-5">
+      </div>
+
+      <div class="text-blue-400 capitalize">
+        <span class="ml-5">sunday</span>
+        <span class="mr-5 sm:text-right">closed</span>
+      </div>
+      <div class="py-3">
+        <hr class="border w-45 m-auto mx-5">
+      </div>
+    </div>
+
+      <div class=" text-black pt-9 pl-4 ">
+        <h1 class="font-bold text-2xl">Our Coverage Area</h1>
+        <div class="py-6">
+        <hr class="border-blue-500 w-1/12 border-2">
+      </div>
+      <img src="/images/map.jpg" alt="">
+      </div>
+    </div>
+</section>
+<!-- How it works section -->
+<section class="bg-white pt-20">
+  <div class="text-center py-20">
+    <h1 class="text-4xl font-bold">How it works</h1>
+  </div>
+  <div class="grid md:grid-cols-3 gap-3 py-20 pb- text-center">
+    <div class=" justify-center">
+      <img class="m-auto" src="/images/icon-2.png" alt="">
+      <h1 class="pt-8 pb-3 font-bold text-2xl">Get Your Results in 1h</h1>
+      <p class="font-medium font-mono text-gray-400">Capitalise on low hanging fruit to <br> identify a ballpark value added activity <br> to beta test. Override the digital divide</p>
+    </div>
+    <div class="">
+      <img class="m-auto" src="/images/icon-3.png" alt="">
+      <h1 class="pt-8 pb-3 font-bold text-2xl">Helpful Test Tips</h1>
+      <p class="font-medium font-mono text-gray-400">Podcasting operational change <br> management inside of workflows to <br> establish a framework. Taking seamless</p>
+    </div>
+    <div class="">
+      <img class="m-auto" src="/images/icon-1-1.png" alt="">
+      <h1 class="pt-8 pb-3 font-bold text-2xl">Tests at Home</h1>
+      <p class="font-medium font-mono text-gray-400">Collaboratively administrate <br> empowered markets via plug-and-play <br> networks. Dynamically procrastinate</p>
+    </div>
+  </div>
+  <div class="pt-24" style="background-image: url('/images/sectionbg95dc.jpg');height: 90vh;">
+    <div class="text-start pt-20 ">
+      <h1 class="text-2xl font-bold pb-3 pl-12">Some Words From Our CEO</h1>
+      <p class="font-thin text-lg  pb-3  pl-12">
+        Dynamically reinvent market-driven opportunities and <br> ubiquitous interfaces. Energistically fabricate an <br> expanded array of niche markets through robust <br> products. Appropriately implement visionary e-services <br> vis-a-vis strategic web-readiness
+      </p>
+      <p class="font-extralight text-lg pb-3  pl-12">
+        Compellingly embrace empowered e-business after user <br> friendly intellectual capital. Interactively actualize
+      </p>
+    </div>
+  </div>
+</section>
+<!--  -->
+<section class="pt-24">
+  <div class="text-start">
+    <h1 class="text-4xl leading-relaxed font-sans font-bold pl-4">There are Many Types of <br>
+      Industries In Consulting</h1>
+      <div class="py-4 pl-4">
+        <hr class="border-blue-500 w-10 border-1 pl-4">
+      </div>
+      <p class=" text-gray-500 text-lg pb-3  pl-4">
+        Listen Plan better Build better.
+      </p>
+  </div>
+</section>
+<!--  -->
+<section class="py-16 px-7 ">
+  <div class=" grid md:grid-cols-3 gap-3 ">
+    <div class="flex">
+      <img class="w-14 h-14" src="/images/icon-4.jpg" alt="">
+      <div class="text-start pl-4">
+        <h2 class="text-2xl font-bold pb-3">Diagnostic</h2>
+        <p class="text-gray-400 text-lg font-medium">Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverable.</p>
+      </div>
+    </div>
+    <!--  -->
+    <div class="flex">
+      <img class="w-14 h-14" src="/images/icon-4.jpg" alt="">
+      <div class="text-start pl-4">
+        <h2 class="text-2xl font-bold pb-3">Testing</h2>
+        <p class="text-gray-400 text-lg font-medium">Efficiently unleash cross-media information without cross-media  value. Quickly maximize timely deliverable.</p>
+      </div>
+    </div>
+    <!--  -->
+    <div class="flex">
+      <img class="w-14 h-14" src="/images/icon-4.jpg" alt="">
+      <div class="text-start pl-4">
+        <h2 class="text-2xl font-bold pb-3">Analyzing</h2>
+        <p class="text-gray-400 text-lg font-medium">Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverable.</p>
+      </div>
+    </div>
+  </div>
+  <!--Next Three cols  -->
+  <div class="grid md:grid-cols-3 gap-3 pt-7 ">
+    <div class="flex">
+      <img class="w-14 h-14" src="/images/icon-4.jpg" alt="">
+      <div class="text-start pl-4">
+        <h2 class="text-2xl font-bold pb-3">Treatment</h2>
+        <p class="text-gray-400 text-lg font-medium">Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+      </div>
+    </div>
+    <!--  -->
+    <div class="flex">
+      <img class="w-14 h-14" src="/images/icon-4.jpg" alt="">
+      <div class="text-start pl-4">
+        <h2 class="text-2xl font-bold pb-3">Pharmacy</h2>
+        <p class="text-gray-400 text-lg font-medium">Completely synergize resource  taxing relationships via premier  niche markets. Professionally cultivate.</p>
+      </div>
+    </div>
+    <!--  -->
+    <div class="flex">
+      <img class="w-14 h-14" src="/images/icon-4.jpg" alt="">
+      <div class="text-start pl-4">
+        <h2 class="text-2xl font-bold pb-3 capitalize">recepy</h2>
+        <p class="text-gray-400 text-lg font-medium">Completely synergize resource taxing relationships via premier  niche markets. Professionally cultivate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- loruiem section -->
+<section class="pt-10 bg-slate-100">
+<div class=" grid md:grid-cols-2 gap-3 justify-between items-center">
+    <div class="w-full text-center pb-14">
+      <img class="m-auto border-0" src="/images/Home-1.jpg" alt="">
+    </div>
+    <div style="height: 580px;" class="w-full mr-4 mb-16 text-center bg-gray-100">
+          <div class="p-20">
+            <p class="text-lg leading-10">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, omnis cupiditate? Mollitia cupiditate fugiat quos quae inventore asperiores, similique vel quia autem repellendus debitis corrupti incidunt! Consequatur adipisci dolores nihil perferendis. Sunt modi placeat dolorum consectetur ut! Reprehenderit aliquid cupiditate, animi eveniet vitae reiciendis optio doloremque mollitia ipsum eaque. Nisi, vel quasi!
+            </p>
+          </div>
+    </div>
+  </div>
+</section>
+ <!-- from Our blog -->
+ <section class="pt-24 pb-20">
+  <div class="text-center">
+    <h1 class="text-4xl font-serif font-bold">From Our Blog</h1>
+    <div class="py-4 pl-4">
+      <hr class="border-blue-500 w-14 border-1 pl-4 m-auto ">
+      <p class="pt-4 text-sm text-gray-500">Checkout our latest updates</p>
+    </div>
+  </div>
+ </section>
+ <!-- Three images -->
+ <section class="px-5 pb-8">
+  <div class="grid md:grid-cols-3 grid-cols-1 sm:text-center text-center gap-y-4  gap-x-4">
+    <div class="">
+      <img class="w-full" src="/images/doc-labwork-1-360x240.jpg" alt="">
+      <div class="text-start flex pt-8">
+        <span class="text-gray-400 font-semibold font-serif"> Nov, 07, 201</span>
+        <p class="text-gray-400 font-bold font-serif uppercase ml-6">admin</p>
+      </div>
+      <div class=" text-start">
+        <h2 class="font-bold text-lg font-serif capitalize pt-2 pb-3">title of single post with image i</h2>
+        <p class=" pb-4 text-gray-400 font-serif">Welcome to WordPress. This is your first post. <br> Edit or delete it, then start writing!</p>
+        <a href="@" class="">Read more</a>
+      </div>
+    </div>
+    <!-- second-image-->
+    <div class="">
+      <img class="w-full" src="/images/maxresdefault-1-360x240.jpg  " alt="">
+      <div class="text-start flex pt-8">
+        <span class="text-gray-400 font-semibold font-serif"> SEP, 06, 2016</span>
+        <p class="text-gray-400 font-bold font-serif uppercase ml-6">admin</p>
+      </div>
+      <div class=" text-start">
+        <h2 class="font-bold text-lg font-serif capitalize pt-2 pb-3">title of single post with image II</h2>
+        <p class=" pb-4 text-gray-400 font-serif">Welcome to WordPress. This is your first post. <br> Edit or delete it, then start writing!</p>
+        <a href="@" class="">Read more</a>
+      </div>
+    </div>
+    <!-- Third-image -->
+    <div class="">
+      <img class="w-full" src="/images/lab-microscop-1-360x240.jpg" alt="">
+      <div class="text-start flex pt-8">
+        <span class="text-gray-400 font-semibold font-serif"> JUN, 06, 2016</span>
+        <p class="text-gray-400 font-bold font-serif uppercase ml-6">admin</p>
+      </div>
+      <div class=" text-start">
+        <h2 class="font-bold text-lg font-serif capitalize pt-2 pb-3">title of single post with image link</h2>
+        <p class=" pb-4 text-gray-400 font-serif">Welcome to WordPress. This is your first post. <br> Edit or delete it, then start writing!</p>
+        <a href="@" class="">Read more</a>
+      </div>
+    </div>
+  </div>
+ </section>
+
+ <!-- Footer -->
+ <section class="" style="height: 100%;">
+  <div class="" style="
+  background-image: url('/images/Footer.jpg');
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+
+  <div class="grid md:grid-cols-4 gap-3 grid-cols-1  pt-24">
+    <!-- First-col -->
+  <div class=" p-3 ">  
+    <div class="flex pb-9">
+      <img class="w-16 h-16" src="/images/icon-4.jpg" alt="">
+      <div class=" text-white capitalize ml-3">
+        <h1 class="text-3xl ">laboratory</h1>
+        <h3 class="text-sm">Diagnostic laboratory</h3>
+      </div>       
+    </div>
+    <!--  -->
+    <p class="text- font-serif pb-3 leading-relaxed text-white">
+      Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition
+    </p>
+  <a href=""  class="text-blue-500 duration-1000 ease-in-out hover:text-yellow-400 capitalize font-serif">get in touch </a>
+  </div>
+    <!-- End of First-col -->
+    <div class="p-3">
+      <h1 class="pt-2 text-white font-bold font-serif text-sm">BUSINESS HOURS</h1>
+      <div class="py-5 text-start">
+        <hr class="border-blue-500 w-7 border-y-2 pl-3">
+      </div>
+      <div class="text-start leading-6 text-lg text-white font-serif">
+        <p class="text-capitalize pb-3">Opining Days :</p>
+        <p class="text-capitalize">Monday – Friday : 9am to 20 pm</p>
+        <p class="text-capitalize pb-6">Saturday : 9am to 17 pm</p>
+        <p class="text-capitalize pb-3">Vacations :</p>
+        <p class="text-capitalize">All Sunday Days</p>
+        <p class="text-capitalize">All Official Holidays</p>
+      </div>
+    </div>
+    <div class="p-3">
+      <h1 class="pt-2 text-white font-serif font-bold text-sm uppercase">practice areas</h1>
+      <div class="py-5 text-start">
+        <hr class="border-blue-500 w-4 border-y-2 pl-3">
+      </div>
+      <div class="text-start text-sm leading-6 text-white font-mono">
+        <!-- <p class="text-capitalize pb-3">Opining Days :</p>
+        <p class="text-capitalize">Monday – Friday : 9am to 20 pm</p>
+        <p class="text-capitalize pb-6">Saturday : 9am to 17 pm</p>
+        <p class="text-capitalize pb-3">Vacations :</p>
+        <p class="text-capitalize">All Sunday Days</p>
+        <p class="text-capitalize">All Official Holidays</p> -->
+        <ul class="font-serif text-lg">
+          <li class="my-2"><a href="#" class="text-blue-500 capitalize te">our services</a></li>
+          <li class="my-2"><a href="#" class="text-blue-500 capitalize te">online results</a></li>
+          <li class="my-2"><a href="#" class="text-blue-500 capitalize te">our services</a></li>
+          <li class="my-2"><a href="#" class="text-blue-500 capitalize te">our store</a></li>
+          <li class="my-2"><a href="#" class="text-blue-500 capitalize te">test diagnostic</a></li>
+          <li class=""><a href="#" class="text-blue-500 capitalize te">shoplifting</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="p-3">
+      <h1 class="pt-2 text-white font-serif font-bold text-sm uppercase">newsletter</h1>
+      <div class="py-5 text-start">
+        <hr class="border-blue-500 w-5 border-y-2 pl-3">
+      </div>
+      <div class="text-start text-sm leading-6 text-white font-serif">
+        <p class="font-serif text-lg py-3">Don’t miss to subscribe to our news feeds, kindly fill the form below</p>
+        <!--  -->
+  <div class="mr-4 pt-5">
+    <div class="mr-4 ">
+<form class="flex"> 
+  <input class="py-3 w-full flex-auto text-black text-start" type="email" id="email" aria-describedby="helper-text-explanation" class="bg-gray-50 border border-gray-300 text-sm focus:ring-blue-500 focus:border-blue-500 block  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="    EMAIL ADDRESS">
+  <button class="btn bg-blue-500 px-4 py-4 uppercase ">join</button>
+</form>
+</div>
+  
+</div>
+
+      </div>
+    </div>
+  </div>
+  <div class="pt-6">
+  <hr class="border-gray-800">
+  </div>
+   <!-- Lower-Footer -->
+   <div class="justify-between text-gray-500 py-6 px-5 flex">
+    <h1 class="text-gray-5`00 font-serif">© 2024 Laboratory All rights reserved</h1>
+    <ul class="flex font-serif text-sm mr-12 text-gray-300">
+      <li class="pr-8"><a href="">Contact Us <span class="ml-8">|</span></a></li>
+      <li class="pr-8"><a href="">About Us <span class="ml-8">|</span></a></li>
+      <li class="pr-8"><a href="">Home <span class="ml-8">|</span></a></li>
+      <li class="pr-8 "><a href="">Blog</a></li>
+    </ul>
+  </div> 
+  </div>
+  
+</section>
+ <!-- End of the Footer -->
+
+ <section class="">
+ </section>
+</body>
+</html>
